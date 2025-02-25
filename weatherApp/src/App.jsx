@@ -153,6 +153,7 @@ function App() {
 
         <p className="quote">{quote}</p>
         <p className="creator">{creator}</p>
+        <p>{error}</p>
 
         <div
           className="display"
