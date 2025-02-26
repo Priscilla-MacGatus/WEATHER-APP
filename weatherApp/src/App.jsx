@@ -81,6 +81,7 @@ function App() {
         setDate(data.location.localtime.split(" "));
         setLOcalTime(data.location.localtime.split(" "));
         setError(null);
+        console.log(localTime[1]);
       })
       .catch((error) => {
         setError(error.message);
@@ -140,6 +141,7 @@ function App() {
 
         <div className="input-box">
           <input
+            name="txtInput"
             type="text"
             placeholder="Enter Your City"
             value={textInput}
@@ -157,7 +159,9 @@ function App() {
 
         <div
           className="display"
-          style={{ visibility: isVisible ? "visible" : "hidden" }}
+          style={{
+            visibility: error ? "hidden" : isVisible ? "visible" : "hidden",
+          }}
         >
           <div className="section-1">
             <div className="location-box">
