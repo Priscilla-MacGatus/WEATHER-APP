@@ -81,7 +81,6 @@ function App() {
         setDate(data.location.localtime.split(" "));
         setLOcalTime(data.location.localtime.split(" "));
         setError(null);
-        console.log(localTime[1]);
       })
       .catch((error) => {
         setError(error.message);
