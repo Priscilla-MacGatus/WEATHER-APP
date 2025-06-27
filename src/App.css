@@ -4,6 +4,7 @@
   padding: 2rem;
   text-align: center;
   font-family: Georgia, "Times New Roman", Times, serif;
+  color: rgb(0, 0, 0);
 }
 
 .display {
@@ -11,10 +12,10 @@
 }
 
 body {
-  background-image: url(https://i.pinimg.com/236x/cc/94/63/cc9463e0c3d72b5ac7692fded0a2d0e1.jpg);
+  background-image: url(https://i.pinimg.com/736x/06/ee/d9/06eed93509c72d73d6020945ec2c3f82.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: top;
+  background-position: center;
   opacity: 80%;
 }
 
@@ -47,7 +48,7 @@ img {
 }
 .sub-feature-box {
   border: 0.5px solid grey;
-  box-shadow: 2px 5px 5px rgb(19, 19, 19);
+  box-shadow: 2px 5px 5px rgb(68, 68, 68);
   border-radius: 15px;
   padding: 10px;
 }
@@ -70,16 +71,19 @@ img {
   text-align: center;
   border-radius: 10px;
   background-color: transparent;
-  box-shadow: 1px 2px 5px rgb(0, 0, 0);
+  box-shadow: 1px 2px 5px rgb(68, 68, 68);
+  border: 0.5px solid grey;
+  font-style: italic;
 }
 
 .input-box button {
   width: 180px;
   height: 40px;
   align-self: center;
-  box-shadow: 1px 2px 5px rgb(0, 0, 0);
+  box-shadow: 1px 2px 3px rgb(68, 68, 68);
   background-color: transparent;
   font-weight: bolder;
+  color: rgb(32, 31, 31);
 }
 
 .section-1 {
@@ -98,7 +102,7 @@ img {
 .sub-date-box {
   margin-top: 30px;
   border: 0.5px solid grey;
-  box-shadow: 2px 5px 5px grey;
+  box-shadow: 1.3px 2px 3px rgb(68, 68, 68);
   border-radius: 15px;
   width: 500px;
 }
@@ -109,21 +113,21 @@ img {
 
 .icon-description-box {
   border: 0.5px solid grey;
-  box-shadow: 2px 5px 5px grey;
+  box-shadow: 1.3px 2px 3px rgb(68, 68, 68);
   border-radius: 15px;
   padding: 20px;
 }
 
 .city-temperature-box {
   border: 0.5px solid grey;
-  box-shadow: 2px 5px 5px grey;
+  box-shadow: 1.3px 2px 3px rgb(68, 68, 68);
   border-radius: 15px;
   padding: 20px;
 }
 
 .location-box {
   border: 0.5px solid grey;
-  box-shadow: 2px 5px 5px grey;
+  box-shadow: 1.3px 2px 3px rgb(68, 68, 68);
   border-radius: 15px;
   padding: 20px;
 }
@@ -212,6 +216,7 @@ img {
 
   .input-box button {
     width: 90%;
+    margin-top: 10px;
   }
 
   h1 {
