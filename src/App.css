@@ -47,7 +47,7 @@ img {
 }
 .sub-feature-box {
   border: 0.5px solid grey;
-  box-shadow: 2px 5px 5px grey;
+  box-shadow: 2px 5px 5px rgb(19, 19, 19);
   border-radius: 15px;
   padding: 10px;
 }
