@@ -136,3 +136,115 @@ img {
   font-size: 25px;
   margin-top: 100px;
 }
+
+/* Medium screens (tablets, 768px and up) */
+@media (max-width: 1024px) {
+  .feature-box {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+  }
+
+  .section-1 {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 15px;
+  }
+
+  .sub-date-box {
+    width: 90%;
+  }
+
+  .input-box input {
+    width: 350px;
+  }
+
+  .input-box button {
+    width: 140px;
+  }
+
+  .quote {
+    font-size: 22px;
+  }
+
+  h2 {
+    font-size: 40px;
+  }
+
+  .title {
+    font-size: 35px;
+  }
+
+  .date-box p {
+    font-size: 24px;
+  }
+
+  .feature-box p {
+    font-size: 18px;
+  }
+}
+
+/* Small screens (phones, 767px and down) */
+@media (max-width: 767px) {
+  .feature-box {
+    grid-template-columns: 1fr;
+    column-gap: 0;
+    row-gap: 20px;
+  }
+
+  .section-1 {
+    grid-template-columns: 1fr;
+    row-gap: 15px;
+  }
+
+  .sub-date-box {
+    width: 100%;
+  }
+
+  .input-box {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+  }
+
+  .input-box input {
+    width: 90%;
+    font-size: 16px;
+  }
+
+  .input-box button {
+    width: 90%;
+  }
+
+  h1 {
+    font-size: 25px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  .title {
+    font-size: 28px;
+  }
+
+  .date-box {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+
+  .date-box p {
+    font-size: 20px;
+  }
+
+  .feature-box p {
+    font-size: 16px;
+  }
+
+  .quote {
+    font-size: 20px;
+    margin-top: 50px;
+  }
+
+  img {
+    width: 80px;
+  }
+}
