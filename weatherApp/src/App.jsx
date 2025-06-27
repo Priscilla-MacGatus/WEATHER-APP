@@ -21,12 +21,6 @@ function App() {
   const [localTime, setLOcalTime] = useState("");
   const [continent, setContinent] = useState("");
   const [isVisible, setIsVisible] = useState(false);
-  const [creator, setCreator] = useState("Created By Priscilla Mac-Gatus");
-  const [quote, setQuote] = useState(
-    "Bringing you sunshine on rainy days and a forecast you can trust."
-  );
-
-  const APIkey = "4b21d82b866e4836bec110050252502";
 
   useEffect(() => {
     if (!textInput) {
@@ -45,18 +39,12 @@ function App() {
       setDate("");
       setLOcalTime("");
       setError(null);
-      setQuote(
-        "Bringing you sunshine on rainy days and a forecast you can trust."
-      );
-      setCreator("Created By Priscilla Mac-Gatus");
     }
   }, [textInput]);
 
   useEffect(() => {
     if (!city) return;
-    fetch(
-      `http://api.weatherapi.com/v1/current.json?key=${APIkey}&q=${city}&aqi=no`
-    )
+    fetch(`/api/weather?city=${city}`)
       .then((response) => {
         if (!response.ok) {
           throw new Error("City not found");
@@ -98,8 +86,6 @@ function App() {
         setLongitude("");
         setDate("");
         setLOcalTime("");
-        setQuote("");
-        setCreator("");
       });
   }, [city]);
 
@@ -121,8 +107,6 @@ function App() {
       setLongitude("");
       setDate("");
       setLOcalTime("");
-      setQuote("");
-      setCreator("");
     }
   }
 
@@ -152,8 +136,10 @@ function App() {
           </button>
         </div>
 
-        <p className="quote">{quote}</p>
-        <p className="creator">{creator}</p>
+        <p className="quote">
+          Bringing you sunshine on rainy days and a forecast you can trust.
+        </p>
+        <p className="creator">Created By Priscilla Mac-Gatus</p>
         <p>{error}</p>
 
         <div

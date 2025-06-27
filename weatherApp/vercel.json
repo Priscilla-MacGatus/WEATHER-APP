@@ -1,0 +1,27 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "src/api/**/*.js",
+      "use": "@vercel/node"
+    },
+    {
+      "src": "src/frontend/**/*.{js,jsx,ts,tsx}",
+      "use": "@vercel/static-build"
+    }
+  ],
+  "env": {
+    "WEATHER_API_KEY": "4b21d82b866e4836bec110050252502",
+    "NODE_ENV": "production"
+  },
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "/src/api/$1"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/src/frontend/$1"
+    }
+  ]
+}
