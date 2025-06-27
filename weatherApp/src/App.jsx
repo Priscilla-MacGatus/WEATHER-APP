@@ -44,7 +44,7 @@ function App() {
 
   useEffect(() => {
     if (!city) return;
-    fetch(`/api/weather?city=${city}`)
+    fetch(`api/weather?city=${city}`)
       .then((response) => {
         if (!response.ok) {
           throw new Error("City not found");
