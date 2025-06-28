@@ -139,8 +139,13 @@ img {
 .quote {
   font-size: 25px;
   margin-top: 100px;
+  font-style: italic;
 }
 
+.creator {
+  font-size: 16px;
+  font-style: italic;
+}
 /* Medium screens (tablets, 768px and up) */
 @media (max-width: 1024px) {
   .feature-box {
@@ -166,7 +171,12 @@ img {
   }
 
   .quote {
-    font-size: 22px;
+    font-size: 20px;
+    font-style: italic;
+  }
+
+  .creator {
+    font-style: italic;
   }
 
   h2 {
@@ -229,6 +239,7 @@ img {
 
   .title {
     font-size: 28px;
+    margin-bottom: 25px;
   }
 
   .date-box {
@@ -245,8 +256,16 @@ img {
   }
 
   .quote {
-    font-size: 20px;
+    font-size: 16px;
     margin-top: 50px;
+    font-style: italic;
+  }
+
+  .creator {
+    font-size: 14px;
+    margin-top: 20px;
+    font-style: italic;
+    font-weight: 400;
   }
 
   img {
